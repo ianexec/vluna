@@ -7,6 +7,7 @@ rm -f $0
 
 apt update -y && apt upgrade -y && apt install git -y
 apt install curl -y && apt install wget -y && apt install jq -y
+apt install lolcat -y && apt install gem -y && gem install lolcat -y
 
 IPVPS=$(curl -sS ipv4.icanhazip.com)
 export IP=$( curl -sS icanhazip.com )
@@ -870,6 +871,9 @@ FAIL2BAN_SETUP(){
 WEBSOCKET_SETUP() {
     clear
     print_install "Menginstall ePro WebSocket Proxy"
+
+    
+    wget ${LUNAREP}configure/install-ws.sh && chmod +x install-ws.sh && ./install-ws.sh
 
     # Variabel file & URL
     local ws_bin="/usr/bin/ws"
