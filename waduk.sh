@@ -632,7 +632,7 @@ EOF
     systemctl enable --now trip
 
     # Pasang dan beri izin eksekusi untuk udp-mini
-    mkdir -p /usr/local/lunatic/
+    mkdir -p /usr/local/lunatic
     wget -q -O /usr/local/lunatic/udp-mini "${LUNAREP}configure/udp-mini"
     chmod +x /usr/local/lunatic/udp-mini
 
@@ -811,7 +811,7 @@ EOF
 
 
 # Fungsi: Menginstall swap 1GB dan alat monitoring gotop
-function SWAPRAM_SETUP(){
+SWAPRAM_SETUP(){
     clear
     print_install "Memasang Swap 2 GB"
 
@@ -964,16 +964,15 @@ MENU_SETUP() {
     clear
     print_install "Memasang Menu Packet"
 
-    # Unduh file
-    wget -q --show-progress ${LUNAREP}feature/menu.zip || {
-        echo "❌ Gagal mengunduh menu.zip"
-        return 1
-    }
+    apt update -y
+    apt install -y unzip
 
-    # Ekstrak dan install
-    unzip -o menu.zip -d menu
+    wget https://raw.githubusercontent.com/ianexec/vluna/main/feature/menu.zip
+    unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
+    rm -rf menu
+    rm -rf menu.zip
 
     # Bersihkan
     rm -rf menu menu.zip
@@ -1090,20 +1089,6 @@ fi
 # === Output Informasi Sukses ===
 echo -e "\e[92m✅ Cron dan Autostart Berhasil Ditetapkan ($TIME_DATE)\e[0m"
 
-
-SEND_NOTIF_INSTALLATION() {
-TEXT="
-<code>────────────────────</code>
-<b> 🟢 NOTIFICATIONS INSTALL 🟢</b>
-<code>────────────────────</code>
-<code> INSTALL SCRIPT SUCCES </code>
-<code>────────────────────</code>
-<i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"⭐ᴏʀᴅᴇʀ⭐","url":"https://t.me/ianlunatix"},{"text":"⭐ɪɴꜱᴛᴀʟʟ⭐","url":"https://wa.me/6283197765857"}]]}'
-curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
-}
-
-
 # ==========================================
 # Function: ENABLED_SERVICE
 # Deskripsi: Mengaktifkan dan me-restart layanan penting
@@ -1143,7 +1128,6 @@ ENABLED_SERVICE() {
 function RUN() {
     clear
     PROXY_SETUP            # Inisialisasi pertama
-    NGINX_SETUP            # Instalasi dan konfigurasi Nginx
     TOOLS_SETUP            # Instalasi paket dasar
     FODER_SETUP            # Membuat folder untuk Xray
     DOMENS_SETUP           # Menyetel domain
@@ -1164,7 +1148,6 @@ function RUN() {
     MENU_SETUP             # Pasang menu CLI
     BASHRC_PROFILE         # Update environment profile
     ENABLED_SERVICE        # Aktifkan semua service
-    SEND_NOTIF_INSTALLATION# Restart konfigurasi sistem
 }
 
 # ==========================================
