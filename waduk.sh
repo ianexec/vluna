@@ -881,7 +881,7 @@ WEBSOCKET_SETUP() {
     local ws_bin="/usr/bin/ws"
     local tun_conf="/usr/bin/tun.conf"
     local ws_service="/etc/systemd/system/ws.service"
-    local ltvpn_bin="/usr/sbin/ftvpn"
+    local ltvpn_bin="/usr/sbin/ltvpn"
     local rclone_root="/root/.config/rclone/rclone.conf"
     local geosite="/usr/local/share/xray/geosite.dat"
     local geoip="/usr/local/share/xray/geoip.dat"
