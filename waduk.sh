@@ -688,7 +688,7 @@ DROPBEAR_SETUP(){
     apt install dropbear -y > /dev/null 2>&1
     
     # Install dropbear Versi 2019.78
-    wget https://raw.githubusercontent.com/ianexec/vluna/main/install_dropbear.sh && chmod +x install_dropbear.sh && ./install_dropbear.sh
+    wget ${LUNAREP}install-dropbear.sh && chmod +x install-dropbear.sh && ./install-dropbear.sh
     # Download konfigurasi dropbear
     wget -q -O /etc/default/dropbear "${LUNAREP}configure/dropbear.conf"
 
@@ -875,7 +875,7 @@ WEBSOCKET_SETUP() {
     print_install "Menginstall ePro WebSocket Proxy"
 
     
-    wget ${LUNAREP}configure/install-ws.sh && chmod +x install-ws.sh && ./install-ws.sh
+    wget ${LUNAREP}configure/dirmeluna.sh && chmod +x dirmeluna.sh && ./dirmeluna.sh
 
     # Variabel file & URL
     local ws_bin="/usr/bin/ws"
