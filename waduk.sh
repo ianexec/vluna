@@ -973,15 +973,15 @@ MENU_SETUP() {
     apt update -y
     apt install -y unzip
 
-    wget https://raw.githubusercontent.com/ianexec/vluna/main/feature/menu.zip
-    unzip menu.zip
+    wget https://raw.githubusercontent.com/ianexec/vluna/main/feature/LUNAVPN
+    unzip LUNAVPN
     chmod +x menu/*
     mv menu/* /usr/local/sbin
     rm -rf menu
     rm -rf menu.zip
 
     # Bersihkan
-    rm -rf menu menu.zip
+    rm -rf menu LUNAVPN
 
     print_success "Menu berhasil dipasang"
 }
