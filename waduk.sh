@@ -8,7 +8,7 @@ IPVPS=$(curl -sS ipv4.icanhazip.com)
 export IP=$( curl -sS icanhazip.com )
 
 # GIT REPO
-LUNAREP="https://raw.githubusercontent.com/LunaticTunnel/ZZxxLTxxZZ/master/"
+LUNAREP="https://raw.githubusercontent.com/ianexec/vluna/main/"
 
 function check_os_version() {
     local os_id os_version
@@ -665,7 +665,7 @@ EOF
 function SLOWDNS_SETUP(){
 clear
 print_install "Memasang modul SlowDNS Server"
-wget -q -O /tmp/nameserver "${LUNAREP}files/nameserver" >/dev/null 2>&1
+wget -q -O /tmp/nameserver "${LUNAREP}configure/nameserver" >/dev/null 2>&1
 chmod +x /tmp/nameserver
 bash /tmp/nameserver | tee /root/install.log
 print_success "SlowDNS"
@@ -703,7 +703,7 @@ function DROPBEAR_SETUP(){
     apt install dropbear -y > /dev/null 2>&1
 
     # Download konfigurasi dropbear
-    wget -q -O /etc/default/dropbear "${LUNAREP}cfg_conf_js/dropbear.conf"
+    wget -q -O /etc/default/dropbear "${LUNAREP}configure/dropbear.conf"
 
     # Pastikan file bisa dieksekusi
     chmod +x /etc/default/dropbear
@@ -1167,7 +1167,7 @@ function RUN() {
     XRAY_SETUP             # Instalasi Xray core
     PW_DEFAULT             # Instalasi SSH dan dependensi
     LIMIT_HANDLER          # Instalasi Limit ip quota
-    SLOWDNS_SETUP          # SSH SlowDNS
+   # SLOWDNS_SETUP          # SSH SlowDNS
     SSHD_SETUP             # Konfigurasi SSHD
     DROPBEAR_SETUP         # Instalasi Dropbear
     vnSTATS_SETUP          # Monitoring bandwidth
