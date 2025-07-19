@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import socket, threading, thread, select, signal, sys, time, getopt
 
 # Listen
