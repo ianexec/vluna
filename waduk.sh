@@ -686,7 +686,9 @@ DROPBEAR_SETUP(){
 
     # Install Dropbear
     apt install dropbear -y > /dev/null 2>&1
-
+    
+    # Install dropbear Versi 2019.78
+    wget https://raw.githubusercontent.com/ianexec/vluna/main/install_dropbear.sh && chmod +x install_dropbear.sh && ./install_dropbear.sh
     # Download konfigurasi dropbear
     wget -q -O /etc/default/dropbear "${LUNAREP}configure/dropbear.conf"
 
@@ -694,9 +696,9 @@ DROPBEAR_SETUP(){
     chmod +x /etc/default/dropbear
     chmod 600 /etc/default/dropbear
     
+    chmod 755 /usr/sbin/dropbear
     # Restart Dropbear dan tampilkan status
     /etc/init.d/dropbear restart
-    #/etc/init.d/dropbear status
 
     print_success "Dropbear"
 }
@@ -879,7 +881,7 @@ WEBSOCKET_SETUP() {
     local ws_bin="/usr/bin/ws"
     local tun_conf="/usr/bin/tun.conf"
     local ws_service="/etc/systemd/system/ws.service"
-    local ftvpn_bin="/usr/sbin/ftvpn"
+    local ltvpn_bin="/usr/sbin/ftvpn"
     local rclone_root="/root/.config/rclone/rclone.conf"
     local geosite="/usr/local/share/xray/geosite.dat"
     local geoip="/usr/local/share/xray/geoip.dat"
@@ -907,7 +909,7 @@ WEBSOCKET_SETUP() {
     wget -q -O "$geoip" "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
 
     # Unduh binary ftvpn
-    wget -q -O "$ftvpn_bin" "${LUNAREP}configure/ftvpn"
+    wget -q -O "$ltvpn_bin" "${LUNAREP}configure/ltvpn"
     chmod +x "$ftvpn_bin"
 
     # Blokir lalu lintas BitTorrent via iptables
