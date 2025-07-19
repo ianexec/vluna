@@ -890,6 +890,18 @@ WEBSOCKET_SETUP() {
     chmod 644 "$tun_conf"
     chmod +x "$ws_service"
 
+
+   if [ -z $1 ]; then
+      echo -e "?"
+   exit
+fi
+   if [ $1 == "dropbear" ] >/dev/null 2>&1 ; then
+   /ws/ws
+elif [ $1 == "openvpn" ]; then
+   ws 2086
+fi
+    
+    
     # Konfigurasi layanan systemd
     systemctl disable ws >/dev/null 2>&1
     systemctl stop ws >/dev/null 2>&1
