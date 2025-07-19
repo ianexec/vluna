@@ -1,47 +1,20 @@
-<p style="text-align:center"> <font color='#FF0059'>▬</font><font
+<p style="text-align:center">
+  <font color="#D1007F">✦</font><font color="#C20096">✦</font><font color="#A400B2">✦</font>
+  <font color="#8600C9">✶</font><font color="#6900E0">✦</font><font color="#4B00F7">✶</font><br>
 
-color='#F1006F'>▬</font><font color='#E30085'>▬</font><font
+  <font color="#FFD700" style="font-size:20px"><b>★ LUNATIC TUNNELING ★</b></font><br>
 
-color='#D6009B'>▬</font><font color='#C800B1'>▬</font><font
+  <font color="#FF4444"><b>• TERM OF SERVICE •</b></font><br>
+  <font color="#00DDFF">✘  DDOS</font><br>
+  <font color="#00BBFF">✘  CARDING</font><br>
+  <font color="#FF5599">✘ TORRENT</font><br>
+  <font color="#FF0066">✘ MULTI LOGIN</font><br>
 
-color='#BB00C7'>ஜ</font><font color='#AD00DD'>۩</font><font
-
-color='#9F00F3'>۞</font><font color='#9F00F3'>۩</font><font
-
-color='#AD00DD'>ஜ</font><font color='#BB00C7'>▬</font><font
-
-color='#C800B1'>▬</font><font color='#D6009B'>▬</font><font
-
-color='#E30085'>▬</font><font color='#F1006F'>▬</font><br> <font
-
-color="#F5FE00"><b> --- 卍 LUNATIC TUNNELING 卐  --- </b></font><br> <font
-
-color='red'>! TERM OF SERVICE !</font><br> <font color='#20CDCC'><b> NO SPAM
-
-</b></font><br> <font color='#10C7E5'><b> NO DDOS </b></font><br> <font
-
-color='#00C1FF'><b> NO HACKING AND CARDING </b></font><br> <font
-
-color="#E51369"><b> NO TORRENT!!  </b> </font><br> <font color="#E51369"><b> NO
-
-MULTI LOGIN!!  </b> </font><br> <font color="#483D8B"><b> Order Premium : <br>
-
-Tele: t.me/LunaticTunnel<br> WA: wa.me/6282240074362</font><br> <font
-
-color="#483D8B"><b>👉NO MULTI LOGIN!!👈</font><br> <font
-
-color='#FF0059'>▬</font><font color='#F1006F'>▬</font><font
-
-color='#E30085'>▬</font><font color='#D6009B'>▬</font><font
-
-color='#C800B1'>▬</font><font color='#BB00C7'>ஜ</font><font
-
-color='#AD00DD'>۩</font><font color='#9F00F3'>۞</font><font
-
-color='#9F00F3'>۩</font><font color='#AD00DD'>ஜ</font><font
-
-color='#BB00C7'>▬</font><font color='#C800B1'>▬</font><font
-
-color='#D6009B'>▬</font><font color='#E30085'>▬</font><font
-
-color='#F1006F'>▬</font>
+  <br><font color="#CCFF00"><b>🔐 Order Premium:</b></font>
+  <br><font color="#00FF99">💬 Telegram:</font>
+  <font color="#FFFFFF">t.me/ianlunatic</font>
+  <br><font color="#00FF99">📞 WhatsApp:</font>
+  <font color="#FFFFFF">wa.me/6283197765857</font>
+  <br><font color="#4B00F7">✶</font><font color="#6900E0">✦</font><font color="#8600C9">✶</font>
+  <font color="#A400B2">✦</font><font color="#C20096">✦</font><font color="#D1007F">✦</font>
+</p>
