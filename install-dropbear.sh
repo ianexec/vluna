@@ -1,6 +1,6 @@
 #!/bin/bash
 # Auto Install Dropbear 2019.78 to /usr/sbin/dropbear
-# Oleh: Dean Programmer
+# Oleh: (LT) Lunatic Tunneling
 
 clear
 echo "[1] Menghapus dropbear versi lama..."
@@ -39,3 +39,6 @@ echo -e "\n[✓] Dropbear versi 2019.78 berhasil diinstall di /usr/sbin/dropbear
 
 chmod 755 /usr/sbin/dropbear
 systemctl restart dropbear
+
+rm -rf dropbear-2019.78
+rm -rf dropbear-2019.78.tar.bz2
