@@ -1,4 +1,10 @@
 #!/bin/bash
+# Create anyewhere : 2015
+# Bringas Tunnel | Bringas Family
+# Lunatic Tunneling ( LT )
+# Autheeer :  Lunatic Tunneling
+# Bandung Barat | jawa Barat
+# Who i am : from Indonesia 
 export TERM=xterm
 export DEBIAN_FRONTEND=noninteractive
 dpkg-reconfigure debconf -f noninteractive 2>/dev/null
