@@ -1,0 +1,8 @@
+sudo bash warp-setup.sh install
+sudo bash warp-setup.sh register
+# (opsional) kalau punya WARP+:
+sudo bash warp-setup.sh license YOUR_WARP_PLUS_KEY
+sudo bash warp-setup.sh generate
+sudo bash warp-setup.sh mode full     # opsi lain: ipv4 | split
+sudo bash warp-setup.sh up
+sudo bash warp-setup.sh enable        # auto-start saat boot
