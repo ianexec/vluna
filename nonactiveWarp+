@@ -1,2 +1,2 @@
-sudo bash installwarps down
-sudo bash installwarps uninstall
+sudo bash warp+ down
+sudo bash warp+ uninstall
