@@ -1,1 +1,1 @@
-sudo bash warp-setup.sh status
+sudo bash installwarp status
